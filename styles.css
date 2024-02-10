@@ -10,8 +10,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
-    height: 40px;
+    width: 113px;
+    height: 43px;
     background-color: white;
     border: 3px solid aqua;
     visibility: hidden;
@@ -20,10 +20,10 @@ body{
 .b1{
     all: unset;
     background-color: aqua;
-    width: 87px;
+    width: 100px;
     height: 30px;
     text-align: center;
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 600;
     visibility: visible;
     
