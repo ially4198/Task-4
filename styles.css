@@ -1,0 +1,126 @@
+body{
+    display: block;
+    padding-left: 5%;
+    text-align: justify;
+}
+.container, .container-2, .container-3, .container-4{
+    padding-bottom: 15px;
+}
+.b{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border: 3px solid aqua;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+}
+.b1{
+    all: unset;
+    background-color: aqua;
+    width: 87px;
+    height: 30px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 600;
+    visibility: visible;
+    
+}
+.b:hover{
+    visibility: visible;
+}
+.container-2{
+    display: flex;
+}
+.b2{
+    all: unset;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    visibility: visible;
+    color:black;
+    position: relative;
+    border: 2px solid aqua;
+    z-index: 1;
+}
+.b2::before{
+    content: '';
+    width: 100px;
+    height: 30px;
+    background-color:aqua;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin:left;
+    transition: 1s;
+}
+.b2:hover::before{
+    transform: scale(1);
+
+}
+.b3{
+  all: unset;
+  position: relative;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  visibility: visible;
+  color:black;
+  border: 2px solid aqua;
+  z-index: 1;
+  overflow: hidden;
+  background-color: aqua;
+}
+.b3::before{
+    content: '';
+    background-color:white;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    transform: scale(1.5);
+    transition:transform 0.8s ease-in-out;
+}
+.b3:hover::before{
+    transform: scale(0);
+}
+.b4{
+    all: unset;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: aqua;
+    position: relative;
+}
+.b4::before{
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 100%;
+    background-color: black;
+    position: absolute;
+    border: solid transparent;
+    transform: scaleX(0);
+    transition: 0.3s;
+}
+.b4:hover::before{
+    transform: scaleX(1);
+    
+}
+
